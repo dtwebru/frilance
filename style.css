@@ -1,0 +1,1171 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* ============================================== */
+/* Секция 1: Главный экран (Hero Section) */
+/* ============================================== */
+.freelance-section {
+    /* Используем ваше фоновое изображение */
+    background-image: url('/Frame_84_3.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 19px 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 700px;
+}
+
+/* --- Контейнер для выравнивания контента --- */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* --- Левая колонка (Текст) --- */
+.content-left {
+    max-width: 580px;
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.course-tag {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.start-date {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin: 0 0 15px 0;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.highlight {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 35px 0;
+    line-height: 1.4;
+    max-width: 540px;
+    text-transform: uppercase;
+}
+
+/* Стиль для выделенного желтого текста */
+.highlight .money {
+    color: #ffd60a;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    gap: 15px;
+}
+
+.features .icon {
+    flex-shrink: 0;
+}
+
+.features .icon img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    padding: 22px;
+    background: linear-gradient(90deg, #ffc900, #ff9b00);
+    color: #24008f;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+}
+
+.access-note {
+    font-size: 14px;
+    margin-top: 15px;
+    max-width: 420px;
+}
+
+.gift {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.gift span {
+    color: #ffd60a;
+}
+
+/* --- Правая колонка (Изображения) --- */
+.content-right {
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+
+/* Главное изображение (девушка, сертификат, стрелки) */
+.main-image {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 140%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Изображение книги */
+.book-image {
+    position: absolute;
+    bottom: -30px;
+    left: -80px;
+    width: 220px;
+    z-index: 2;
+}
+
+
+/* ============================================== */
+/* Секция 2: Лицензия и Сертификат */
+/* ============================================== */
+.secion2 {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #351062;
+    margin-top: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sec2head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 18px;
+}
+
+.romb {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.sec2body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sertificate {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2Text {
+    width: 40%;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* ============================================== */
+/* Секция 3: Основной контент (Почему, Для кого, Что получите) */
+/* ============================================== */
+.secion3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.secion3h1 {
+    color: #351062;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 50px;
+}
+
+.sec3Box {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    background-color: rgb(255, 232, 141);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #351062;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+/* --- CTA Кнопка (Желтый блок) --- */
+/* .sec33 {
+    width: 40%;
+    height: auto;
+    padding-top: 20px;
+    background-color: #ffd800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #351062;
+    border-radius: 20px;
+} */
+/* --- Стили для кнопки с эффектом сверкания --- */
+.sec33 {
+    width: 40%;
+    height: auto;
+    padding-top: 20px;
+    background-color: #ffd800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #351062;
+    border-radius: 20px;
+    /* 1. ОБЯЗАТЕЛЬНО: Устанавливаем относительное позиционирование */
+    position: relative; 
+    /* 2. Добавляем анимацию */
+    animation: shine-pulse 10s infinite; 
+    overflow: hidden; /* Чтобы эффект света не выходил за границы */
+}
+
+/* --- Стили для самого "света" (псевдоэлемент) --- */
+.sec33::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%; /* Начальная позиция (за пределами кнопки слева) */
+    width: 50%; /* Ширина полосы света */
+    height: 100%;
+    /* Градиент, имитирующий световой блик */
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%, /* Прозрачный */
+        rgba(255, 255, 255, 0.4) 50%, /* Полупрозрачный белый (блик) */
+        rgba(255, 255, 255, 0) 100% /* Прозрачный */
+    );
+    /* Запускаем анимацию прохождения света */
+    transform: skewX(-20deg); /* Наклоняем полосу */
+    animation: shine 10s infinite; /* Та же частота, что и у кнопки */
+}
+
+/* --- Определение анимации прохождения света --- */
+@keyframes shine {
+    0% {
+        left: -75%; /* Скрыто слева */
+        opacity: 0.8;
+    }
+    1% {
+        opacity: 0.8;
+    }
+    5% {
+        left: 125%; /* Прошло справа */
+        opacity: 0;
+    }
+    100% {
+        left: 125%;
+        opacity: 0; /* Остается невидимым до следующего цикла */
+    }
+}
+
+/* --- (Необязательно) Анимация пульсации для усиления эффекта --- */
+@keyframes shine-pulse {
+    0% {
+        box-shadow: 0 0 0px #ffc107;
+    }
+    1% {
+        box-shadow: 0 0 10px #ffc107;
+    }
+    5% {
+        box-shadow: 0 0 0px #ffc107;
+    }
+    100% {
+        box-shadow: 0 0 0px #ffc107;
+    }
+}
+
+/* *Сохраняем ваш эффект при наведении без изменений* */
+.sec33:hover {
+    background-color: #ff9100;
+    transition: 1s;
+}
+
+
+.sec33:hover {
+    background-color: #ff9100;
+    transition: 0.2s;
+}
+
+.sec33H1 {
+    font-size: 24px;
+}
+
+/* --- Секция "Для кого" (sec34) --- */
+.sec34Box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sec34Card {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec4card1 {
+    width: 80px;
+    height: 80px;
+    border: 15px solid #ffd90082;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec4card1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.sec34Card p {
+    font-size: 14px;
+    font-weight: 800;
+    color: #351062;
+}
+
+/* --- Секция "Что получите" (sec44) --- */
+.sec44Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sec44Card {
+    width: 400px;
+    height: 100px;
+    background-color: #ffd90064;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.sec44Card img {
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    left: 40%;
+}
+
+.sec44Card p {
+    color: #351062;
+    font-weight: 800;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* --- Расписание Курса --- */
+.course-schedule {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.course-schedule h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #351062;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+
+.item-number {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    background-color: #ffd800;
+    color: #434343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 20px;
+    box-shadow: 0 0 0 3px rgba(255, 216, 0, 0.4);
+}
+
+.item-content {
+    flex-grow: 1;
+}
+
+.item-content h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #240747;
+}
+
+.item-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.item-content li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 600;
+    color: #411874;
+}
+
+.item-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.bonus {
+    color: #8a2be2;
+    font-weight: 800;
+}
+
+/* --- Секция "Бонусы/Подарки" (sec54) --- */
+.sec54Box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+}
+
+.sec54Card {
+    width: 500px;
+    height: 400px;
+    background-color: #fff1a582;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec54Card p {
+    font-size: 22px;
+    color: #240747;
+    font-weight: 800;
+}
+
+.sec54Card img {
+    width: 80%;
+}
+
+/* --- Секция "Итоги Курса" --- */
+.results-container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.results-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #5d288c;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.results-box {
+    background-color: #fffbe6;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.results-box p {
+    font-weight: 800;
+    font-size: 18px;
+    color: #5d288c;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.results-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.results-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #5d288c;
+    font-weight: bolder;
+}
+
+.results-list li::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 1.1;
+}
+
+/* --- Секция "Автор Курса" --- */
+.author-section {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.author-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.author-photo-wrapper {
+    flex: 0 0 40%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f5;
+    padding: 10px;
+}
+
+.author-photo-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.author-info {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.author-info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5a149b;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.author-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.author-info li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #8a2be2;
+}
+
+.author-info li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: gray;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+
+/* ============================================== */
+/* Секции "Отзывы" (secion7) и "Примеры" (secion8Videos) */
+/* ============================================== */
+
+/* --- Секция с 6 отзывами-видео --- */
+.secion7 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.video-player video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.video-player:hover .play-button-overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #9c27b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.video-player:hover .play-icon {
+    transform: scale(1.1);
+    background-color: #8a2be2;
+}
+
+.play-icon::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 18px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-left: 4px;
+}
+
+.video-player.playing .play-button-overlay {
+    display: none;
+}
+
+/* --- Секция с 3 видео-уроками --- */
+.secion8Videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.video-player1 {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.video-player1 video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.play-button-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.video-player1:hover .play-button-overlay1 {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.video-player1:hover .play-icon {
+    transform: scale(1.1);
+    background-color: #8a2be2;
+}
+
+.video-player1.playing .play-button-overlay1 {
+    display: none;
+}
+
+
+/* ============================================== */
+/* Футер (Подвал) */
+/* ============================================== */
+.site-footer {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+/* --- Основной информационный блок --- */
+.footer-info {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* --- Ссылки (Политика, Оферта и т.д.) --- */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #ff6347;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 15px;
+    transition: color 0.2s;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.footer-links a:hover {
+    color: #ff8a65;
+}
+
+/* --- Яндекс Рейтинг --- */
+.yandex-rating {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    color: #333;
+    font-size: 12px;
+}
+
+.rating-score {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.rating-stars {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.rating-text {
+    display: block;
+    margin-top: 3px;
+}
+
+
+/* ============================================== */
+/* Стили для Swiper (Слайдер) */
+/* ============================================== */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+swiper-container {
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    border-radius: 20px;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============================================== */
+/* Адаптивность (@media queries) */
+/* ============================================== */
+
+/* --- Адаптивность для Главного экрана (freelance-section) --- */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec44Card {
+        width: 80%;
+    }
+
+    .content-left {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-right {
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .main-image {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .book-image {
+        width: 180px;
+        bottom: -15px;
+        left: -10px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .highlight {
+        font-size: 22px;
+    }
+
+    .course-header {
+        justify-content: center;
+    }
+
+    .features {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .author-content {
+        gap: 30px;
+    }
+
+    .author-photo-wrapper {
+        flex: 0 0 35%;
+    }
+}
+
+@media (max-width: 540px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .highlight {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        width: 80%;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .content-right {
+        height: 400px;
+    }
+
+    .book-image {
+        width: 150px;
+        bottom: 0;
+        left: -5px;
+    }
+
+    .sec33 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec33H1 {
+        font-size: 18px;
+    }
+
+    .sec34Card {
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .sec54Card {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Адаптивность для футера */
+    .site-footer {
+        padding: 30px 10px;
+    }
+
+    .footer-info p {
+        font-size: 13px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .yandex-rating {
+        transform: scale(0.9);
+    }
+
+    /* Адаптивность для отзывов (secion7) */
+    .video-player {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Адаптивность для видео-уроков (secion8Videos) */
+    .video-player1 {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+    }
+
+    /* Адаптивность для автора (author-section) */
+    .secion3h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .author-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .author-photo-wrapper {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .author-info {
+        padding-top: 0;
+    }
+
+    .author-info h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .author-info li {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* --- Адаптивность для Итогов и Расписания --- */
+@media (max-width: 600px) {
+    .results-box {
+        padding: 20px 25px;
+    }
+
+    .results-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .results-box p {
+        font-size: 16px;
+    }
+
+    .results-list li {
+        font-size: 15px;
+        padding-left: 30px;
+        margin-bottom: 12px;
+    }
+
+    .results-list li::before {
+        font-size: 18px;
+    }
+
+    .course-schedule {
+        padding: 0 10px;
+    }
+
+    .course-schedule h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .schedule-item {
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .item-number {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .item-content h2 {
+        font-size: 16px;
+    }
+
+    .item-content li {
+        font-size: 14px;
+    }
+}
