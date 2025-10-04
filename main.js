@@ -75,7 +75,7 @@ const addInfoSave = document.querySelector(".addInfoSave");
 const toastElement = document.getElementById("toast-message");
 
 // URL твоего Google Apps Script
-const googleScriptURL = "https://script.google.com/macros/s/AKfycbyhGzvL-aRo-CX2YVa3BkwnRCOsJcMt4wtYvR2FX9JTXGcTMf4OF4Y3sbAm89EUqgMq/exec";
+const googleScriptURL = "https://script.google.com/macros/s/AKfycbyZMLJqmZOqMZgteINrhDFEgoV3sYemok1Uowx94BHt_ICbAsUPN8N62u3DjvFPb8IIHg/exec";
 
 
 // ===============================================
