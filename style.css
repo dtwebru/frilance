@@ -158,8 +158,10 @@ h1 {
 /* Главное изображение (девушка, сертификат, стрелки) */
 .main-image {
     position: absolute;
+    max-width: 346px;
+    opacity: 50%;
     top: -20px;
-    left: -20px;
+    right: 20px;
     width: 140%;
     height: auto;
     z-index: 1;
@@ -169,7 +171,8 @@ h1 {
 .book-image {
     position: absolute;
     bottom: -30px;
-    left: -80px;
+    right: 10px;
+    opacity: 10%;
     width: 220px;
     z-index: 2;
 }
