@@ -186,7 +186,7 @@ h1 {
     height: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #351062;
+    background-color: #110520;
     margin-top: -16px;
     display: flex;
     flex-direction: column;
@@ -393,10 +393,10 @@ h1 {
 }
 
 .sec4card1 {
-    width: 80px;
-    height: 80px;
-    border: 15px solid #ffd90082;
-    border-radius: 50%;
+    width: 50px;
+    height: 56px;
+    border: 14px solid #958efd;
+    border-radius: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,7 +415,7 @@ h1 {
 }
 
 /* --- Секция "Что получите" (sec44) --- */
-.sec44Box {
+/* .sec44Box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,14 +425,63 @@ h1 {
     padding-bottom: 30px;
 }
 
+.sec44Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch; /* все карточки одинаковой высоты 
+}*/
+
+
+.sec44Box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  align-items: stretch; /* выравнивает карточки по высоте */
+}
+
+.sec44Card {
+  flex: 1 1 400px;
+  max-width: 400px;
+  background-color: #ffd90064;
+  border-radius: 20px;
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* чтобы текст начинался ровно под иконкой */
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* выравнивание картинки */
+.sec44Card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+/* текст внутри карточки */
+.sec44Card p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+
 .sec44Card {
     width: 400px;
-    height: 100px;
+    /* height: 100px; */
     background-color: #ffd90064;
     border-radius: 20px;
     position: relative;
     text-align: center;
-}
+} */
+
+
+
 
 .sec44Card img {
     width: 50px;
@@ -1274,4 +1323,15 @@ swiper-container {
     .item-content li {
         font-size: 14px;
     }
+    
+.youtube {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 }
