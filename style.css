@@ -10,7 +10,7 @@ body {
 /* ============================================== */
 .freelance-section {
     /* Используем ваше фоновое изображение */
-    background-image: url('/sect1_back.svg');
+    background-image: url('/sect1_back.png');
     background-size: cover;
     background-position: center;
     color: white;
